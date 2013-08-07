@@ -1,19 +1,49 @@
+.jumbotron {
+  background-color: #1240AB;
+  color: white;
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+}
+
+.navbar-inverse {
+  color: black;
+  background-color: white;
+  border-bottom: black 5px solid;
+}
+
+#stemettes-logo {
+  max-width: 20%;
+  max-height: 60px
+}
+
+.navbar-nav, .navbar-brand {
+  color: black;
+  font-size: 1.35em;
+  margin-top: 3px
+}
+
+.navbar-brand {
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
+  color: black
+}
+
 * Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
   padding-bottom: 20px;
   color: black;
 }
-
-.navbar-inverse {
-  background-color: #0F90BA
-}
-/* Set widths on the navbar form inputs since otherwise they're 100% wide */
-/*.navbar-form input[type="text"],
-.navbar-form input[type="password"] {
-  width: 180px;
-}
-*/
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
@@ -24,13 +54,11 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* Let the jumbotron breathe */
-  .jumbotron {
-    margin-top: 20px;
-    background-color: #AFDC64
-  }
+
   /* Remove padding from wrapping element since we kick in the grid classes here */
   .body-content {
     padding: 0;
   }
 }
+
+@media screen and (max-width: 1070px) {
