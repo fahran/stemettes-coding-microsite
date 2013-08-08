@@ -5,7 +5,8 @@
   border-radius: 0px
 }
 .btn-default {
-  background-color: black;
+  background-color: #61AE24;
+  border: none;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -53,7 +54,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-brand:hover {
-  background-color: #D0D102
+  background-color: #61AE24
 }
 
 * Move down content because we have a fixed navbar that is 50px tall */
