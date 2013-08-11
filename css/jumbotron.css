@@ -1,3 +1,16 @@
+.list-group {
+  max-width: 400px
+}
+
+
+.affix {
+  position: fixed;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
 .jumbotron {
   background-color: #00A1CB;
   color: white;
@@ -21,6 +34,10 @@
   text-align: center;  
 }
 
+.clear {
+  clear: both;
+}
+
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   margin-bottom: 20px;
@@ -41,12 +58,20 @@ body {
   max-height: 60px
 }
 
+.sponsor-logo {
+  height: 100px;
+  width: 100px
+}
+
 .navbar-nav, .navbar-brand {
   color: black;
   font-size: 1.35em;
   margin-top: 3px
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  background-color: #00A1CB;
+}
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand {
   color: black;
