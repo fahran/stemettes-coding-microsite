@@ -86,7 +86,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-brand:hover {
-  background-color: #61AE24
+  background-color: #00A1CB
 }
 
 * Move down content because we have a fixed navbar that is 50px tall */
