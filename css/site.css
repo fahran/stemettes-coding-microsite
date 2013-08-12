@@ -7,15 +7,21 @@
   position: fixed;
 }
 
-.affix-bottom {
-  position: absolute;
+.affix-top {
+  margin-top: 50px;
+}
+
+#side-nav {
+  font-family: "Trebuchet MS", helvetica, sans-serif;
+  font-size: 1.6em;
 }
 
 .jumbotron {
   background-color: #00A1CB;
   color: white;
-  margin-top: 30px;
-  border-radius: 0px
+  margin-top: 60px;
+  border-radius: 0px;
+  margin-bottom: -5px;
 }
 .btn-default {
   background-color: #61AE24;
@@ -41,6 +47,8 @@
 h1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   margin-bottom: 20px;
+  margin-top: -80px;
+  padding-top: 80px;
 }
 
 body {
@@ -60,7 +68,6 @@ body {
 
 .sponsor-logo {
   height: 100px;
-  width: 100px
 }
 
 .navbar-nav, .navbar-brand {
