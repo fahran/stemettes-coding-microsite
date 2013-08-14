@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Stemettes">
+
+	<title>Stemette Summer Hack - Python</title>
+	 <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="css/site.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand active" href="#">Summer Hack</a>
+    <div class="nav-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#scratch">Scratch</a></li>
+        <li><a href="#appInventor">App Inventor</a></li>
+        <li><a href="#python">Python</a></li>
+        
+      </ul>
+      <a href="http://stemettes.co.uk/"><img id="stemettes-logo" class="pull-right"
+        src="http://stemettes.co.uk/sites/stemettes.co.uk/files/blk-logo-dec-2012_0.png"></a>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+
+<div class="container">
+  
+	<div class="jumbotron">
+		<h1>Python @ Stemette Summer Hack</h1>
+      <p>Python Cheatsheet! For use with the <a href="http://www.learnstreet.com/lessons/study/python">LearnStreet Python Course</a></p>
+	</div>
+  
+	<div class="col-4">
+	  <ul id="side-nav" class="nav nav-pills nav-stacked">
+        <li><a href="#lesson-1">1. Introduction to Python</a></li>	
+	  	<li><a href="#lesson-2">2. Variables, Numbers and Booleans</a></li>
+        <li><a href="#lesson-3">3. Strings, Indexes and Slices</a></li>
+        <li><a href="#lesson-3">4. Control Flow and Conditionals</a></li>
+        <li><a href="#lesson-3">5. Loops and Iterables</a></li>
+        <li><a href="#lesson-3">6. Lists and Tuples</a></li>
+        <li><a href="#lesson-3">7. Dictionaries & Sets</a></li>
+        <li><a href="#lesson-3">8. Scoping and Mutability</a></li>
+        <li><a href="#lesson-3">9. Classes and Objects</a></li>
+	  </ul>
+	</div>
+  
+    <div class="col-8">
+      <div class="page-header">
+        <h1 id="lesson-1">Lesson 1: Introduction to Python</h1>
+        
+        <p>See lesson 2 for numbers and 3 for strings.</p>
+        
+      </div>
+      <div class="page-header">
+      <h1 id="lesson-1">Lesson 2: Variables, Numbers and Booleans</h1>
+        <h2>Variables</h2>
+        <table class="table">
+          <tr>
+            <td>Assignment</td>
+            <td><code>greeting = "Ahoy"
+ print(greeting)</code></td>
+            <td>Ahoy</td>
+          </tr>
+          <tr>
+            <td>Re-assignment</td>
+            <td><code>greeting = greeting + " there!"
+ print(greeting)</code></td>
+            <td>Ahoy there!</td>
+          </tr>
+          
+          <tr>
+            <td>Quickly increment</td>
+            <td><code>num = 5
+num += 2
+print(num)</code></td>
+            <td>7</td>
+          </tr>
+          
+          <tr>
+            <td>Quickly decrement</td>
+            <td><code>num = 5
+num -= 2
+print(num)</code></td>
+            <td>3</td>
+          </tr>
+        </table>
+        <p>Reserved words - not allowed as variable names: <code>and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield</code></p>
+        <p>Also, dont use numbers, or punctuation except the underscore "_".</p>
+      <h2>Maths Operators</h2>
+        
+        <table class="table">
+          <tr>
+            <td>Addition</td>
+            <td><code>2 + 2</code></td>
+            <td>4</td>
+            
+            <td>Multiplication</td>
+            <td><code>7 * 6</code></td>
+            <td>42</td>
+          </tr>
+          
+          <tr>
+            <td>Subtraction</td>
+            <td><code>18-4</code></td>
+            <td>14</td>
+            
+            <td>Division</td>
+            <td><code>16/2</code></td>
+            <td>8</td>
+          </tr>
+        
+          
+          <tr>
+            <td>Powers</td>
+            <td><code>2**3</code></td>
+            <td>8</td>
+          
+            <td>Modulus (remainder)</td>
+            <td><code>11%2</code></td>
+            <td>1</td>
+          </tr>
+          
+        </table>
+        
+        <h2>Numbers & Types</h2>
+          <table class="table">
+          <tr>
+            <td>ints - whole (integer) numbers</td>
+            <td><code>four = 4
+type(four)</code></td>
+            <td>&lt;type 'int'&gt;</td>
+                        <td>integer division</td>
+              <td><code>5/2</code></td>
+            <td>2 (the remainder is dropped)</td>
+          </tr>   
+            <tr>
+            <td>floats - numbers with decimals</td>
+            <td><code>two = 2.0
+type(two)</code></td>
+            <td>&lt;type 'float'&gt;</td>
+            <td>floating point division</td>
+              <td><code>5.0/2</code></td>
+            <td>2.5</td>
+            </tr>
+            <tr>
+              <td>booleans</td>
+              <td><code>type(True)</code></td>
+              <td>&lt;type 'bool'&gt;</td>
+            </tr>
+        </table>
+        
+        
+        
+        <h2>Boolean Operators</h2>
+          <table class="table">
+          <tr>
+            <td>Equality</td>
+            <td><code>2 == 2</code></td>
+            <td>True</td>
+            <td>Inverse</td>
+            <td><code>2 != 2</code></td>
+            <td>False</td>
+          </tr>   
+            <tr>
+              <td>Greater than</td>
+            <td><code>3 > 2</code></td>
+            <td>True</td>
+            <td>Greater than or equal to</td>
+            <td><code>2 >= 2</code></td>
+            <td>True</td>
+            </tr>
+             <tr>
+              <td>Less than</td>
+            <td><code>3 < 2</code></td>
+            <td>False</td>
+            <td>Less than or equal to</td>
+            <td><code>2 <= 2</code></td>
+            <td>True</td>
+            </tr>
+            <tr>
+              <td>And</td>
+            <td><code>1 == 1 and 1 == 3</code></td>
+            <td>False</td>
+            <td>Or</td>
+            <td><code>1 == 1 or 1 == 3</code></td>
+            <td>True</td>
+            </tr>
+            <tr>
+              <td>Not</td>
+              <td><code>not True</code></td>
+              <td>False</td>
+            </tr>
+        </table>        
+      </div>
+      
+      <div class="page-header">
+        <h1 id="lesson-3">Lesson 3: Strings, Indexes and Slices</h1>
+        <h2>Indexes</h2>
+              <p>Remember: indexes are zero-based: 
+                <img class="" id="indexes-img" src="http://developers.google.com/edu/python/images/hello.png"></p>
+                        <table class="table">
+          <tr>
+            <td>Get letter at index</td>
+            <td><code>"stemettes"[2]</code></td>
+            <td>"e"</td>
+            <td>Negative indexing</td>
+            <td><code>"python"[-1]</code></td>
+            <td>"n"</td>
+          </tr>
+         <tr>
+            <td>Slice a range</td>
+            <td><code>"stemettes"[0:4]</code></td>
+            <td>"stem"</td>
+            <td>With a negative index</td>
+            <td><code>"stemettes"[0:-1]</code></td>
+            <td>"stemette"</td>
+          </tr>
+        </table> 
+        <h2>Strings</h2>
+        <table class="table">
+                    <tr>
+            <td>Concatenation</td>
+            <td><code>"Hi" + " there!"</code></td>
+            <td>"Hi there!"</td>
+
+            <td>Repetition</td>
+            <td><code>"!" * 10</code></td>
+            <td>"!!!!!!!!!!"</td>
+          </tr>
+          <tr>
+            <td>Contains</td>
+            <td><code>"E" in "Stemettes</code></td>
+            <td>False</td> 
+            <td>Length</td>
+            <td><code>len("stem")</code></td>
+            <td>4</td>
+          </tr>   
+          <tr>
+            <td>Uppercase</td>
+            <td><code>"Stemettes!".upper()</code></td>
+            <td>"STEMETTES!"</td> 
+            <td>Lowercase</td>
+            <td><code>"Stemettes!".lower()</code></td>
+            <td>"stemettes!"</td>
+          </tr>   
+            <td>Convert to String</td>
+            <td>
+<code>x = 6
+print("x is" + str(x))</code></td>
+            <td>x is 6</td> 
+          <tr>
+          </tr>
+        </table>      
+      </div>
+              <div class="page-header">
+        <h1 id="lesson-4">Lesson 4: Control Flow and Conditionals</h1>
+        <h2>Functions</h2>
+                <table class="table">
+                  <tr>
+                    <td>Define a function, code that can be reused later</td>
+                    <td><code>def say_hello():
+    print("hello")
+say_hello()</code></td>
+                    <td>hello</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Functions can take parameters</td>
+                    <td><code>def say_hello(name):
+    print("Hello " + name)
+say_hello("Clara")</code></td>
+                    <td>Hello Clara</td>
+                  </tr>
+                </table>
+                <h2>Conditionals (if, else, elif)</h2>          
+<code>def who_is(name):
+    if name == "Anne-Marie":
+        print("Anne-Marie runs the Stemettes")
+    elif name == "Lydia" or name == "Fahran":
+        print(name + " helped organise the Summer Hack")
+    else:
+        print("I don't know " + name + "!")</code>
+                
+                <table class="table">
+                  <tr>
+                    <td></td>
+                    <td><code>who_is("Anne-Marie")</code></td>
+                    <td>Anne-Marie runs the Stemettes</td>
+                    <td></td>
+                    <td><code>who_is("Lydia")</code></td>
+                    <td>Lydia helped organise the Summer Hack</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><code>who_is("Greg")</code></td>
+                    <td>I don't know Greg!</td>
+                    </tr>
+                </table>
+      </div>
+      <div class="page-header">
+        <h1 id="lesson-5">Lesson 5: Loops and Iterables</h1>
+        <h2>While loops</h2>
+        <table class="table">
+                  <tr>
+                    <td>While condition is True, do contents of loop</td>
+                    <td>
+<code>count = 0
+while count < 3:
+    print("count is " + str(count))
+    count += 1</code></td>
+                    <td>count is 0<br>count is 1<br>count is 2</td>
+                  </tr>
+                </table>
+      
+        <h2>For loops</h2>
+        <table class="table">
+        <tr>
+          <td>For each element in the iterable, do loop</td>
+          <td>
+<code>for i in range(2):
+  print("count is " + str(i))</code></td>
+          <td>count is 0<br>count is 1</td>
+          </tr>
+          <tr>
+          <td>You can iterate over strings too</td>
+          <td>
+<code>for letter in "me":
+  print(letter)</code></td>
+          <td>m<br>e</td>
+          </tr>
+        </table>
+      </div>
+       <div class="page-header">
+        <h1 id="lesson-6">Lesson 6: Lists and Tuples</h1>
+         <h2>Lists</h2>
+         <table class="table">
+           <tr>
+             <td>Get list elements by index</td>
+             <td>
+<code>numbers = [1,2,3,5,8]
+animals = ["cat", "dog", "mouse"]
+print(numbers[2])
+print(animals[0])</code></td>
+             <td>3<br>cat</td>
+           </tr>
+           <tr>
+             <td>Remove an element</td>
+             <td>
+<code>one_animal = animals.pop(0)
+print(one_animal)
+print(animals)</code></td>
+             <td>cat<br>['dog', 'mouse']</td>
+           </tr>
+           <td>Add an element</td>
+           <td><code>numbers.append(60)
+print(numbers)</code></td>             
+           <td>[1, 2, 3, 5, 8, 60]</td></table>
+      
+      <h2>Tuples</h2>
+      <p>Tuples behave like lists, only you can't change their values.</p>
+<table class="table">
+  <tr><td></td>
+    <td><code>tuple = (1, "yes")
+print(tuple[1])</code></td>      
+    <td>yes</td>   
+  </tr>
+      </table>
+  </div>
+  <div class="page-header">
+    <h1 id="lesson-7">Lesson 7: Dictionaries & Sets</h1>
+    <h2>Dictionaries</h2>
+    <table class="table">
+      <tr>
+        <td>Dictionaries contain matching pairs of information: Keys and Values. Use a key to look up a value.</td>
+        <td><code>family = {"dad": 60, "mum" : 58, "brother": 20, "sister" : 15, "me" : 10}
+print family["me"]</code></td>
+        <td>10</td>  
+      </tr>
+      <tr>
+        <td>Iterate over the keys</td>
+        <td><code>for key in family:
+    #do something...</code></td>
+      </tr>
+    </table>
+    <table class="table">
+      <tr>
+        <td>List of keys</td>
+        <td><code>dictionary_name.keys()</code></td>
+        <td></td>
+        <td>List of Values</td>
+        <td><code>dictionary_name.values()</code></td>
+      </tr>
+    </table>
+    
+    <h2>Sets</h2>
+    <table class="table">
+      <tr>
+        <td>Sets contain unique elements in no particular order</td>
+        <td><code>set("stemettes")</code></td>
+        <td>set(['m', 's', 'e', 't'])</td>
+      </tr>
+    </table>
+      <table class="table">
+      <tr>
+        <td>Length</td>
+        <td><code>len(set("stem"))</code></td>
+        <td>4</td>
+        <td>Contains</td>
+        <td><code>m in set("stem")</code></td>
+        <td>True</td>
+      </tr>
+      <tr>
+        <td>Is all set a within set b?</td>
+        <td><code>a.issubset(b)</code> or <code>a &lt;= b</code></td>
+        <td></td>
+        <td>Is all of set b within set a?</td>
+        <td><code>a.issuperset(b)</code> or <code>a &gt;= b</code></td>
+        <td>
+      </tr>
+      <tr>
+        <td>Values in a not in b</td>
+        <td><code>a.difference(b)</code> or <code>a - b</code></td>
+        <td></td>
+        <td>Values in a or in b</td>
+        <td><code>a.union(b)</code> or <code>a | b</code>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Values in both a and b</td>
+        <td><code>a.intersection(b)</code> or <code>a & b</code></td>
+        <td></td>
+        <td>Values in a or b but not both</td>
+        <td><code>a.symmetric_difference(b)</code> or <code>a ^ b</code>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="page-header">
+    <h1 id="lesson-8">Lesson 8: Scoping and Mutability</h1>
+    <table class="table">
+    <tr>
+      <td>Local variables take prescedence over global ones</td>
+      <td><code>name = "Alice"
+def who_is_it():
+    name = "Glenda"
+    print(name)</code></td>
+      <td>Glenda</td>
+      </tr>
+      
+      <tr>
+      <td>To change a global variable from a function, use global</td>
+      <td><code>name = "Alice"
+def who():
+    global name
+    name = "Glenda"
+who()
+print(name)</code></td>
+      <td>Glenda</td>
+      </tr>
+    </table>
+  </div>
+  <div class="page-header">
+    <h1 id="lesson-9">Lesson 9: Classes and Objects</h1>
+    <p>The <code>__init__</code> method is used to create a new instance of an object. Properties of the object like "height" and "amount" are defined here.</p>
+    <p>Other methods within the class can be called on an instance of the object, eg. <code>bottle.drink(250)</code>.</p>
+    <p>This is object-oriented coding, and a very useful way of dividing up your work.</p>
+    <code>def run(bottle):
+    bottle.drink(250)
+    return bottle.amount
+
+class Bottle:
+    def __init__(self, liquid):
+        self.amount= 500
+        self.height = 10 
+        self.empty = False
+        self.liquid = liquid
+    
+      def amount_left(self):
+        return self.amount
+    
+      def drink(self, amount):
+    self.amount -= amount
+    if self.amount %lt;= 0:
+        self.empty = True</code>
+  </div>
+  </div>
+      
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

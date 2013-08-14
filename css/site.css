@@ -1,7 +1,22 @@
+code {
+  white-space: pre-wrap;
+}
+
+#indexes-img {
+  width: 150px
+}
+
+tr>td:first-child {
+  font-weight: bold;
+}
+
+tr>td:nth-child(4) {
+  font-weight: bold;
+}
+
 .list-group {
   max-width: 400px
 }
-
 
 .affix {
   position: fixed;
@@ -23,6 +38,11 @@
   border-radius: 0px;
   margin-bottom: -5px;
 }
+.jumbotron>p>a {
+  color: white;
+  text-decoration: underline;
+}
+
 .btn-default {
   background-color: #61AE24;
   border: none;
@@ -112,4 +132,12 @@ body {
   }
 }
 
-@media screen and (max-width: 1070px) {
+@media print {
+  .col-4 {
+    display: none;
+  }
+  
+  .col-8 {
+    width: 100%;
+  }
+}
